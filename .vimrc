@@ -11,6 +11,7 @@ set wildmenu
 set display=truncate
 set fileencoding=utf8
 set undofile
+set hidden
 let mapleader=" "
 set ff=unix
 
