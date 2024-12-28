@@ -26,6 +26,8 @@ set updatetime=500
 set confirm
 set autoindent
 filetype plugin indent on
+set showmatch
+set matchpairs=(:),\[:\],{:},<:>
 
 syntax on
 
