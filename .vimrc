@@ -80,6 +80,10 @@ nnoremap <leader>gfp :Git fpush<CR>
 nnoremap <leader>g2 :diffget //2<CR>
 nnoremap <leader>g3 :diffget //3<CR>
 nnoremap <C-S-X> :term<CR>
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
 
 nnoremap <expr> <leader>n g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
 nnoremap <leader>N :NERDTreeFind<CR>
