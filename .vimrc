@@ -17,7 +17,7 @@ set ff=unix
 set shiftwidth=4
 set tabstop=4
 set list
-set listchars=tab:⟶\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set listchars=tab:⟶\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:$
 set scrolloff=8
 set sidescrolloff=8
 set clipboard=unnamed
@@ -128,5 +128,7 @@ endfunction
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
- highlight ExtraWhitespace guibg=lightgray
+ highlight ExtraWhitespace guibg=lightgray ctermfg=242 ctermbg=236
+ highlight NonText ctermfg=242 ctermbg=236
+ highlight SpecialKey ctermfg=242 ctermbg=236
  match ExtraWhitespace /\s\+$/
