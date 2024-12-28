@@ -23,6 +23,7 @@ set sidescrolloff=8
 set clipboard=unnamed
 set signcolumn=yes
 set updatetime=500
+set confirm
 
 syntax on
 
