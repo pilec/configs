@@ -31,6 +31,7 @@ set matchpairs=(:),\[:\],{:},<:>
 set laststatus=2
 set undofile
 set undodir=~/.vim/undodir
+set autoread
 
 syntax on
 
