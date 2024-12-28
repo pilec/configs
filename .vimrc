@@ -24,6 +24,8 @@ set clipboard=unnamed
 set signcolumn=yes
 set updatetime=500
 set confirm
+set autoindent
+filetype plugin indent on
 
 syntax on
 
