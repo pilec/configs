@@ -29,6 +29,8 @@ filetype plugin indent on
 set showmatch
 set matchpairs=(:),\[:\],{:},<:>
 set laststatus=2
+set undofile
+set undodir=~/.vim/undodir
 
 syntax on
 
