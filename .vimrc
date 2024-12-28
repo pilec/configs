@@ -74,6 +74,10 @@ nnoremap <leader>gs :Git<CR>
 nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gp :Git push<CR>
 nnoremap <leader>gl :Git log<CR>
+nnoremap <leader>gm :Gvdiffsplit!<CR>
+nnoremap <leader>gfp :Git fpush<CR>
+nnoremap <leader>g2 :diffget //2<CR>
+nnoremap <leader>g3 :diffget //3<CR>
 nnoremap <C-S-X> :term<CR>
 
 nnoremap <expr> <leader>n g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
