@@ -79,6 +79,8 @@ nnoremap <leader>gs :Git<CR>
 nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gp :Git push<CR>
 nnoremap <leader>gl :Git log<CR>
+nnoremap <leader>gf :Git fetch<CR>
+nnoremap <leader>gpu :Git pull<CR>
 nnoremap <leader>gr :Git rbi<CR>
 nnoremap <leader>gm :Gvdiffsplit!<CR>
 nnoremap <leader>gfp :Git fpush<CR>
