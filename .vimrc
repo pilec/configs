@@ -14,6 +14,8 @@ set undofile
 set hidden
 let mapleader=" "
 set ff=unix
+set shiftwidth=4
+set tabstop=4
 
 syntax on
 
