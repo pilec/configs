@@ -32,6 +32,7 @@ set laststatus=2
 set undofile
 set undodir=~/.vim/undodir
 set autoread
+set virtualedit=block
 
 syntax on
 
