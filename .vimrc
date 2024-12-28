@@ -28,6 +28,7 @@ set autoindent
 filetype plugin indent on
 set showmatch
 set matchpairs=(:),\[:\],{:},<:>
+set laststatus=2
 
 syntax on
 
