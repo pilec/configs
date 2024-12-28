@@ -16,6 +16,8 @@ let mapleader=" "
 set ff=unix
 set shiftwidth=4
 set tabstop=4
+set list
+set listchars=tab:⟶\ ,extends:›,precedes:‹,nbsp:·,trail:·
 
 syntax on
 
@@ -58,6 +60,8 @@ nnoremap <leader>gp :Git push<CR>
 nnoremap <leader>gl :Git log<CR>
 nnoremap <C-S-X> :term<CR>
 
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+nnoremap <expr> <leader>n g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
+nnoremap <leader>N :NERDTreeFind<CR>
+
+ highlight ExtraWhitespace guibg=lightgray
+ match ExtraWhitespace /\s\+$/
