@@ -68,8 +68,8 @@
 
 [merge]
 	ff = false
-	renames = defaults to diff.renames
-	renameLimit = defaults to diff.renameLimit
+	#renames = defaults to diff.renames
+	#renameLimit = defaults to diff.renameLimit
 
 [log]
 	decorate = true
