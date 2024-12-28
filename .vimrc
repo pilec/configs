@@ -27,6 +27,7 @@ set confirm
 set autoindent
 filetype plugin indent on
 set showmatch
+set matchtime=2
 set matchpairs=(:),\[:\],{:},<:>
 set laststatus=2
 set undofile
