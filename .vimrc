@@ -35,6 +35,13 @@ map <leader>V P"*
 map <leader>f :Files<CR>
 filetype off
 
+" reselect after chaning indentation
+vnoremap < <gv
+vnoremap > >gv
+
+" just replace visual selection without copying
+vnoremap <leader>p "_dP
+
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn//fzf.vim'
