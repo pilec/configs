@@ -49,6 +49,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
+Plug 'mhinz/vim-signify'
 call plug#end()
 
 filetype plugin indent on
