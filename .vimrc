@@ -21,7 +21,7 @@ set listchars=tab:⟶\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set scrolloff=8
 set sidescrolloff=8
 set clipboard=unnamed
-et signcolumn=yes
+set signcolumn=yes
 set updatetime=500
 
 syntax on
