@@ -50,6 +50,10 @@ nnoremap <silent> <C-Right> :vertical resize -3<CR>
 nnoremap <silent> <C-Up> :resize +3<CR>
 nnoremap <silent> <C-Down> :resize -3<CR>
 nnoremap <Leader>b :Buffers<CR>
+nnoremap <leader>gs :Git<CR>
+nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gp :Git push<CR>
+nnoremap <leader>gl :Git log<CR>
 nnoremap <C-S-X> :term<CR>
 
 autocmd VimEnter * NERDTree
