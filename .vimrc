@@ -62,10 +62,10 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-signify'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
 filetype plugin indent on
-color desert
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 
