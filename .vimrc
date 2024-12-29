@@ -80,7 +80,7 @@ nnoremap <silent> <C-Left> :vertical resize +3<CR>
 nnoremap <silent> <C-Right> :vertical resize -3<CR>
 nnoremap <silent> <C-Up> :resize +3<CR>
 nnoremap <silent> <C-Down> :resize -3<CR>
-nnoremap <silent> <Leader>nr :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
+nnoremap <silent> <Leader>nr :call NumberToggle()<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>h :History<CR>
 nnoremap <leader>gs :Git<CR>
@@ -143,3 +143,16 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
  highlight NonText ctermfg=242 ctermbg=236
  highlight SpecialKey ctermfg=242 ctermbg=236
  match ExtraWhitespace /\s\+$/
+ 
+" Relative or absolute number lines
+function! NumberToggle()
+    if(&nu == 1)
+        set nu!
+        set rnu
+    else
+        set nornu
+        set nu
+    endif
+endfunction
+
+nnoremap <C-n> :call NumberToggle()<CR>
