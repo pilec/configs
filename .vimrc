@@ -34,6 +34,7 @@ set undofile
 set undodir=~/.vim/undodir
 set autoread
 set virtualedit=block
+set relativenumber
 
 syntax on
 
@@ -79,6 +80,7 @@ nnoremap <silent> <C-Left> :vertical resize +3<CR>
 nnoremap <silent> <C-Right> :vertical resize -3<CR>
 nnoremap <silent> <C-Up> :resize +3<CR>
 nnoremap <silent> <C-Down> :resize -3<CR>
+nnoremap <silent> <Leader>nr :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>h :History<CR>
 nnoremap <leader>gs :Git<CR>
