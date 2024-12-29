@@ -139,7 +139,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
  highlight ExtraWhitespace guibg=lightgray ctermfg=242 ctermbg=236
- highlight NonText ctermfg=242 ctermbg=236
+ highlight NonText ctermfg=242 ctermbg=232
  highlight SpecialKey ctermfg=242 ctermbg=236
  match ExtraWhitespace /\s\+$/
  
