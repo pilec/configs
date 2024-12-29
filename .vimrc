@@ -25,7 +25,6 @@ set signcolumn=yes
 set updatetime=500
 set confirm
 set autoindent
-filetype plugin indent on
 set showmatch
 set matchtime=2
 set matchpairs=(:),\[:\],{:},<:>
